@@ -1,0 +1,15 @@
+{
+  "posts": [
+    { "id": "1", "title": "Estudar jsx", "views": 100, "image": "https://imgs.search.brave.com/PZyJvEiv7KumepDFylTpvvQQv-0nVz-1rjbmD6jQLgQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzY1MjE1Ny1NTEE4/Njk3MjcxMzIyNF8w/NzIwMjUtVi53ZWJw" },
+    { "id": "2", "title": "another title", "views": 200 , "image": "https://via.placeholder.com/600/771796" },
+      { "id": "3", "title": "another title", "views": 200 , "image": "https://via.placeholder.com/600/771796" },
+        { "id": "4", "title": "another title", "views": 200 , "image": "https://via.placeholder.com/600/771796" }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
