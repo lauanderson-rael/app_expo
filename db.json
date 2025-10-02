@@ -3,44 +3,56 @@
     {
       "id": "1",
       "title": "Carlos da Silva",
-      "views": 100,
+      "views": 103,
       "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
-      "comments": ["Ótimo post!", "Muito interessante"]
+      "comments": [
+        "Ótimo post!",
+        "Muito interessante"
+      ]
     },
     {
       "id": "2",
       "title": "Maria Santos",
-      "views": 200,
+      "views": 201,
       "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
-      "comments": ["Adorei o conteúdo"]
+      "comments": [
+        "Adorei o conteúdo"
+      ]
     },
     {
       "id": "3",
       "title": "Ana Costa",
-      "views": 200,
+      "views": 202,
       "image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
       "comments": []
     },
     {
       "id": "4",
       "title": "Juliano Oliveira",
-      "views": 200,
+      "views": 204,
       "image": "https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg",
-      "comments": ["Excelente trabalho", "Parabéns!"]
+      "comments": [
+        "Excelente trabalho",
+        "Parabéns!"
+      ]
     },
     {
       "id": "5",
       "title": "Fernanda Lima",
       "views": 200,
       "image": "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg",
-      "comments": ["Muito bom"]
+      "comments": [
+        "Muito bom"
+      ]
     },
     {
       "id": "6",
       "title": "Carlos Mendes",
       "views": 150,
       "image": "https://media.gettyimages.com/id/1424988699/pt/foto/businessman-contemplating-in-the-office-looking-through-the-window.jpg?s=2048x2048&w=gi&k=20&c=qkO2hiuNtCoMQ6KsjQ4xyRwje7aitShwDBAqumtHM1k=",
-      "comments": ["Inspirador"]
+      "comments": [
+        "Inspirador"
+      ]
     }
   ]
 }

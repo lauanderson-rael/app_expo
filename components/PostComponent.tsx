@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { AntDesign } from "@expo/vector-icons";
 
@@ -8,14 +8,28 @@ interface PostProps {
   views: number;
   image: string;
   comments: string[];
+  onLike: (id: number) => void;
 }
 
 export default function PostComponent({
+  id,
   title,
   views,
   image,
   comments,
+  onLike,
 }: PostProps) {
+  function handleLike() {
+    fetch(`http://localhost:3000/posts/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        views: views + 1,
+      }),
+    }).then(() => onLike(id));
+  }
   return (
     <View style={css.post}>
       <Text style={css.postTitle}>{title}</Text>
@@ -31,9 +45,11 @@ export default function PostComponent({
 
       <View style={css.postFooter}>
         <View style={{ display: "flex", flexDirection: "row", gap: 10 }}>
-          <AntDesign name="like" size={24} color="#fff" />
-          <AntDesign name="share-alt" size={24} color="#fff" />
-          <AntDesign name="comment" size={24} color="#fff" />
+          <TouchableOpacity onPress={handleLike}>
+            <AntDesign name="like" size={24} color="#0089a4" />
+          </TouchableOpacity>
+          <AntDesign name="share-alt" size={24} color="#4ca02d" />
+          <AntDesign name="comment" size={24} color="#c2c2c2" />
         </View>
         <Text style={css.postBody}>{views} views</Text>
       </View>

@@ -19,6 +19,12 @@ export default function Index() {
       .then((data) => setPosts(data));
   }, []);
 
+  const handleLike = (id: number) => {
+    setPosts(posts.map(post => 
+      post.id === id ? { ...post, views: post.views + 1 } : post
+    ));
+  };
+
   return (
     <View style={css.container}>
       <Text style={css.title}>Posts</Text>
@@ -33,6 +39,7 @@ export default function Index() {
             views={item.views}
             image={item.image}
             comments={item.comments}
+            onLike={handleLike}
           />
         )}
       />
@@ -53,5 +60,4 @@ const css = StyleSheet.create({
     textAlign: "center",
     marginBottom: 20,
   },
-
 });
