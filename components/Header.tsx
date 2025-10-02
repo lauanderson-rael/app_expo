@@ -1,4 +1,5 @@
 import { View, StyleSheet } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
 
 export interface HeaderProps {
   name: string;
@@ -18,6 +19,8 @@ export default function Header({ name, image }: HeaderProps) {
         <img style={css.image} src={image} alt={name} />
         <p> Olá, {name}</p>
       </div>
+
+      <AntDesign name="menu" size={24} color="white" />
     </View>
   );
 }
@@ -31,7 +34,7 @@ const css = StyleSheet.create({
     justifyContent: "space-between",
     color: "#fff",
     borderRadius: 8,
-    padding: 4,
+    padding: 8,
   },
   image: {
     width: 50,

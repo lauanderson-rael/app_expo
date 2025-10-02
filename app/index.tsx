@@ -29,6 +29,7 @@ export default function Index() {
   return (
     <View style={css.container}>
       <Header name={user.name} image={user.image} key={user.name} />
+
       <Text style={css.title}>Últimas postagens</Text>
 
       <FlatList
@@ -60,6 +61,6 @@ const css = StyleSheet.create({
     fontWeight: "bold",
     color: "#fff",
     textAlign: "center",
-    marginBottom: 20,
+    margin: 20,
   },
 });
