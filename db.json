@@ -1,9 +1,15 @@
 {
+  "user": {
+    "name": "Lauanderson",
+    "email": "lauandersoncosta@acad.ifma.edu.br",
+    "age": 22,
+    "image": "https://avatars.githubusercontent.com/u/100454015?v=4"
+  },
   "posts": [
     {
       "id": "1",
       "title": "Carlos da Silva",
-      "views": 103,
+      "views": 109,
       "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
       "comments": [
         "Ótimo post!",
@@ -13,7 +19,7 @@
     {
       "id": "2",
       "title": "Maria Santos",
-      "views": 201,
+      "views": 204,
       "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
       "comments": [
         "Adorei o conteúdo"
@@ -48,7 +54,7 @@
     {
       "id": "6",
       "title": "Carlos Mendes",
-      "views": 150,
+      "views": 155,
       "image": "https://media.gettyimages.com/id/1424988699/pt/foto/businessman-contemplating-in-the-office-looking-through-the-window.jpg?s=2048x2048&w=gi&k=20&c=qkO2hiuNtCoMQ6KsjQ4xyRwje7aitShwDBAqumtHM1k=",
       "comments": [
         "Inspirador"

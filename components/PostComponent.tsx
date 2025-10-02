@@ -2,13 +2,13 @@ import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { AntDesign } from "@expo/vector-icons";
 
-interface PostProps {
+export interface PostProps {
   id: number;
   title: string;
   views: number;
   image: string;
   comments: string[];
-  onLike: (id: number) => void;
+  onLike?: (id: number) => void;
 }
 
 export default function PostComponent({
@@ -19,6 +19,7 @@ export default function PostComponent({
   comments,
   onLike,
 }: PostProps) {
+  //
   function handleLike() {
     fetch(`http://localhost:3000/posts/${id}`, {
       method: "PATCH",
@@ -28,7 +29,7 @@ export default function PostComponent({
       body: JSON.stringify({
         views: views + 1,
       }),
-    }).then(() => onLike(id));
+    }).then(() => onLike?.(id));
   }
   return (
     <View style={css.post}>
