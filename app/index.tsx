@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import { useEffect, useState } from "react";
-import { Image } from "expo-image";
+import PostComponent from "../components/PostComponent";
 
 interface Post {
   id: number;
   title: string;
-  body: string;
+  views: number;
   image: string;
-
+  comments: string[];
 }
 
 export default function Index() {
@@ -22,15 +22,18 @@ export default function Index() {
   return (
     <View style={css.container}>
       <Text style={css.title}>Posts</Text>
+
       <FlatList
         data={posts}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <View style={css.post}>
-            <Text style={css.postTitle}>{item.title}</Text>
-            <Text style={css.postBody}>{item.body}</Text>
-            <Image source={{ uri: item.image }} style={{ width: 200, height: 200 }} />
-          </View>
+          <PostComponent
+            id={item.id}
+            title={item.title}
+            views={item.views}
+            image={item.image}
+            comments={item.comments}
+          />
         )}
       />
     </View>
@@ -50,20 +53,5 @@ const css = StyleSheet.create({
     textAlign: "center",
     marginBottom: 20,
   },
-  post: {
-    backgroundColor: "#1a1a2e",
-    padding: 15,
-    marginBottom: 10,
-    borderRadius: 8,
-  },
-  postTitle: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#fff",
-    marginBottom: 5,
-  },
-  postBody: {
-    fontSize: 14,
-    color: "#ccc",
-  },
+
 });

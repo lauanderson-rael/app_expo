@@ -1,15 +1,46 @@
 {
   "posts": [
-    { "id": "1", "title": "Estudar jsx", "views": 100, "image": "https://imgs.search.brave.com/PZyJvEiv7KumepDFylTpvvQQv-0nVz-1rjbmD6jQLgQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzY1MjE1Ny1NTEE4/Njk3MjcxMzIyNF8w/NzIwMjUtVi53ZWJw" },
-    { "id": "2", "title": "another title", "views": 200 , "image": "https://via.placeholder.com/600/771796" },
-      { "id": "3", "title": "another title", "views": 200 , "image": "https://via.placeholder.com/600/771796" },
-        { "id": "4", "title": "another title", "views": 200 , "image": "https://via.placeholder.com/600/771796" }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    {
+      "id": "1",
+      "title": "Carlos da Silva",
+      "views": 100,
+      "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
+      "comments": ["Ótimo post!", "Muito interessante"]
+    },
+    {
+      "id": "2",
+      "title": "Maria Santos",
+      "views": 200,
+      "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
+      "comments": ["Adorei o conteúdo"]
+    },
+    {
+      "id": "3",
+      "title": "Ana Costa",
+      "views": 200,
+      "image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
+      "comments": []
+    },
+    {
+      "id": "4",
+      "title": "Juliano Oliveira",
+      "views": 200,
+      "image": "https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg",
+      "comments": ["Excelente trabalho", "Parabéns!"]
+    },
+    {
+      "id": "5",
+      "title": "Fernanda Lima",
+      "views": 200,
+      "image": "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg",
+      "comments": ["Muito bom"]
+    },
+    {
+      "id": "6",
+      "title": "Carlos Mendes",
+      "views": 150,
+      "image": "https://media.gettyimages.com/id/1424988699/pt/foto/businessman-contemplating-in-the-office-looking-through-the-window.jpg?s=2048x2048&w=gi&k=20&c=qkO2hiuNtCoMQ6KsjQ4xyRwje7aitShwDBAqumtHM1k=",
+      "comments": ["Inspirador"]
+    }
+  ]
 }
