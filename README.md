@@ -21,3 +21,7 @@ Este é um app [Expo](https://expo.dev) criado com [`create-expo-app`](https://w
    ```bash
    npx json-server db.json
    ```
+
+## Tela do app
+
+<img src="image.png" width="400px" alt="foto da tela do app"/>
